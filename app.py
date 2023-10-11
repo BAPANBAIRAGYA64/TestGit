@@ -10,3 +10,11 @@ def print_n(n: int):
     print(n)
 
     return
+
+## fibonacci series
+def fib_series(n: int):
+    ## base case
+    if n == 0 or n == 1:
+        return n
+    
+    return fib_series(n-1) + fib_series(n-2)
