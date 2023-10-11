@@ -18,3 +18,15 @@ def fib_series(n: int):
         return n
     
     return fib_series(n-1) + fib_series(n-2)
+
+def run(n):
+    print_n(n)
+
+    print(fib_series(n))
+
+    return
+
+
+if __name__ == '__main__':
+    n = int(input())
+    run(n)
